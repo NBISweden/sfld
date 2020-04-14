@@ -1,3 +1,6 @@
+
+Note: This repo is created just for ease of creating a conda package for SFLD, please refer to the original site at https://github.com/ebi-pf-team/interproscan if you have any questions.
+=========================================
 SFLD pre/post-processing
 ========================
 
@@ -6,18 +9,25 @@ Building
 
 Example build instructions - note that you will have to install the easel library to compile this
 
-$> wget http://eddylab.org/software/hmmer3/3.1b2/hmmer-3.1b2.tar.gz
-$> tar xf hmmer-3.1b2.tar.gz
-$> cd hmmer-3.1b2
-$> ./configure
-$> make
-$> make check
+```bash
+$> wget http://eddylab.org/software/hmmer3/3.1b2/hmmer-3.1b2.tar.gz 
+$> tar xf hmmer-3.1b2.tar.gz  
+$> cd hmmer-3.1b2  
+$> ./configure  
+$> make  
+$> make check  
+```
 
-$> cd .../path/to/src/sfld/1
+```bash
+$> cd .../path/to/src/sfld/1 
+```
+
 In the Makefile replace the path in EASEL_DIR with the 'easel' subdir of the hmmer
 distribution (e.g. /path/to/hmmer-3.1b2/easel). Then run
-$> make
 
+```bash
+$> make
+```
 License
 -------
 
